@@ -3,6 +3,7 @@
     margin:0px;
     padding: 0px;
 }
+/*three main sections*/
 main{
     height: 100vh;
     width:100vw;
@@ -12,30 +13,107 @@ main{
 .sidebar{
     background-color: deepskyblue;
     grid-area: 1/1/3/1;
-
 }
 nav{
     background-color: white;
-    box-shadow: 2px 1px 3px grey;
+    box-shadow: 2px 2px 2px grey;
     position: relative;
+    display:flex;
+    flex-direction: column;
+    flex:1;
 }
+
+.top-nav{
+    width:100%;
+    height:50%;
+    display:flex;
+    justify-content: space-between;
+    align-items: center;
+}
+#search{
+    border-radius: 15px;
+    background-color: lightblue;
+    width: 600px;
+    padding-left:10px;
+    height:30px;
+}
+
+.bot-nav{
+    width:100%;
+    height:50%;
+    display:flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.bot-nav-button{
+    display:flex;
+    align-items: center;
+    justify-content: center;
+    background-color:deepskyblue;
+    width:110px;
+    height:35px;
+    border-radius:15px;
+    color:white;
+}
+
 .content{
     background-color: lightgray;
-    
 }
+
+/*formatting css*/
 .align-horizontal{
     display:flex;
     justify-content: start;
     align-items: center;
     gap:15px;
     margin:20px;
+}
+.align-vertical{
+    display:flex;
+    flex-direction: column;
+    align-items: start;
+    justify-content: center;
+}
+.nav-margin{
+    margin-top:10px;
+    margin-bottom:20px;
+}
+.white-font{
     font-size:20px;
     font-weight: bold;
     color:white;
     font-family: Arial;
 }
-img{
+.black-font{
+    font-size:20px;
+    font-weight: bold;
+    color:black;
+    font-family: Arial;
+}
+
+/*image css*/
+.sidebar img{
     width: 30px;
     height:auto;
     filter:invert(1);
+}
+nav img{
+    width: 40px;
+    height: auto;
+}
+.icon{
+    border-radius: 50%;
+    width:40px;
+    height:40px;
+}
+.big-icon{
+    border-radius: 50%;
+    width:80px;
+    height:80px;
+}
+.hidden-button{
+    background:url(images/magnify.svg);
+    border:0px; 
+    width:40px;
+    height:40px;
 }
